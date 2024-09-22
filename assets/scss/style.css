@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.cabecalho {
+  background-color: #4d39ff;
+  height: 17vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 8vw;
+  color: white;
+}
+.cabecalho div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cabecalho div h1 {
+  font-size: 16px;
+  margin: 0px;
+}
+.cabecalho div img {
+  width: 2vw;
+  margin-right: 1vw;
+  border-radius: 50px;
+  border: 3px solid white;
+  padding: 2px;
+}
+.cabecalho a {
+  text-decoration: none;
+  color: white;
+}
+.cabecalho a:hover {
+  -webkit-text-decoration: underline white;
+          text-decoration: underline white;
+}
+
+#section-index {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  padding: 20px 0px;
+  border: 4px solid #4d39ff;
+  border-radius: 0px 0px 20px 20px;
+}
+#section-index a {
+  color: #4d39ff;
+  text-decoration: none;
+  font-size: 20px;
+}
+#section-index a:hover {
+  -webkit-text-decoration: underline #4d39ff;
+          text-decoration: underline #4d39ff;
+}
+
+#main-index {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 15vh 0px;
+}
+
+#cartao-index {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  padding: 0px 15vw;
+}
+#cartao-index div {
+  width: 400px;
+}
+#cartao-index div h1 {
+  font-size: 40px;
+}
+#cartao-index div h2 {
+  font-size: 25px;
+  color: rgb(71, 71, 71);
+}
+#cartao-index div a {
+  text-decoration: none;
+  color: gray;
+  font-size: 20px;
+}
+#cartao-index div a:hover {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/*criar-conta.html*/
+#article-criar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 76vh;
+}
+#article-criar h1 {
+  font-size: 24px;
+  margin: 6vh 0px;
+}
+#article-criar form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#article-criar form label {
+  width: 16vw;
+  text-align: left;
+}
+#article-criar form input[type=text], #article-criar form input[type=password], #article-criar form input[type=email], #article-criar form input[type=date] {
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 5px 10px;
+  width: 16vw;
+  margin: 0.3vh 0px 2vh;
+}
+#article-criar form input[type=submit] {
+  background-color: #4d39ff;
+  border-radius: 20px;
+  border: 1px solid #4d39ff;
+  color: white;
+  font-weight: bold;
+  padding: 15px 30px;
+  margin-top: 2vh;
+}
+#article-criar form input[type=submit]:hover {
+  -webkit-text-decoration: underline white 2px;
+          text-decoration: underline white 2px;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px #4d39ff;
+}
+
+/* Login.html */
+#article-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 60vh;
+}
+#article-login h1 {
+  font-size: 24px;
+  margin: 6vh 0px;
+}
+#article-login form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#article-login form label {
+  width: 16vw;
+  text-align: left;
+}
+#article-login form h2 {
+  font-size: 15px;
+  margin: 0px 0px;
+  text-align: center;
+  margin-bottom: 2vh;
+  color: #4d39ff;
+}
+#article-login form h2:hover {
+  -webkit-text-decoration: underline #4d39ff 2px;
+          text-decoration: underline #4d39ff 2px;
+  cursor: pointer;
+}
+#article-login form input[type=text], #article-login form input[type=password] {
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 5px 10px;
+  width: 16vw;
+  margin: 0.3vh 0px 2vh;
+}
+#article-login form input[type=submit] {
+  background-color: #4d39ff;
+  border-radius: 20px;
+  border: 1px solid #4d39ff;
+  color: white;
+  font-weight: bold;
+  padding: 15px 30px;
+  margin-top: 2vh;
+  margin: 0px;
+}
+#article-login form input[type=submit]:hover {
+  -webkit-text-decoration: underline white 2px;
+          text-decoration: underline white 2px;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px #4d39ff;
+}
+#article-login form div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* investimentos.html */
+#article-inicio-investimentos {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 50px 0px 50px 50px;
+}
+#article-inicio-investimentos #div-inicio-texto-investimentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#article-inicio-investimentos #div-inicio-texto-investimentos h1 {
+  color: #4d39ff;
+  font-weight: bold;
+  font-size: 40px;
+}
+#article-inicio-investimentos #div-inicio-texto-investimentos h2 {
+  font-size: 20px;
+  color: #4d39ff;
+  margin-bottom: 20px;
+}
+#article-inicio-investimentos #div-inicio-texto-investimentos button {
+  width: 12vw;
+  padding: 15px 20px;
+  font-weight: bold;
+  color: #4d39ff;
+  background: white;
+  border: 2px solid #4d39ff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#article-inicio-investimentos #div-inicio-texto-investimentos button:hover {
+  color: white;
+  background: #4d39ff;
+}
+#article-inicio-investimentos #div-inicio-foto-investimentos img {
+  width: 40vw;
+}
+
+#article-seguros-investimentos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #4d39ff;
+  padding: 20px;
+}
+#article-seguros-investimentos #div-seguros-texto-investimentos {
+  padding: 60px;
+  text-align: center;
+}
+#article-seguros-investimentos #div-seguros-texto-investimentos h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+#article-seguros-investimentos #div-seguros-texto-investimentos h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+#article-seguros-investimentos #div-seguros-texto-investimentos button {
+  width: 12vw;
+  padding: 15px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #4d39ff;
+  background: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#article-seguros-investimentos #div-seguros-texto-investimentos button:hover {
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+}
+
+#article-investimentos-investimentos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px 0px 60px 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#article-investimentos-investimentos #div-investimentos-titulo-investimentos {
+  margin-bottom: 80px;
+}
+#article-investimentos-investimentos #div-investimentos-titulo-investimentos h1 {
+  color: #4d39ff;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+#article-investimentos-investimentos #div-investimentos-geral-investimentos {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+#article-investimentos-investimentos #div-investimentos-geral-investimentos h1 {
+  color: #4d39ff;
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+#article-investimentos-investimentos #div-investimentos-geral-investimentos h2 {
+  background: #4d39ff;
+  padding: 10px 0px;
+  color: white;
+  border-radius: 20px 20px 0px 0px;
+  width: 30vw;
+  border-left: 4px solid #4d39ff;
+  border-right: 4px solid #4d39ff;
+}
+#article-investimentos-investimentos #div-investimentos-geral-investimentos h3 {
+  color: #4d39ff;
+  padding: 5px 0px;
+  width: 30vw;
+  border-left: 4px solid #4d39ff;
+  border-right: 4px solid #4d39ff;
+}
+#article-investimentos-investimentos #div-investimentos-geral-investimentos p {
+  background: #4d39ff;
+  padding: 20px 0px;
+  height: 20vh;
+  color: white;
+  border-radius: 0px 0px 20px 20px;
+  width: 30vw;
+  border-left: 4px solid #4d39ff;
+  border-right: 4px solid #4d39ff;
+}
+#article-investimentos-investimentos #div-investimentos-geral-investimentos a {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 40px;
+  border-radius: 20px;
+  color: #4d39ff;
+  border: 4px solid #4d39ff;
+  background: white;
+  padding: 15px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+#article-investimentos-investimentos #div-investimentos-geral-investimentos a:hover {
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+}
+
+#footer-investimentos {
+  background: #4d39ff;
+  padding: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#footer-investimentos #div-rodape-investimentos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10vh;
+}
+#footer-investimentos #div-rodape-investimentos img {
+  width: 15vw;
+}
+#footer-investimentos #div-rodape-investimentos h1 {
+  font-size: 28px;
+  text-align: left;
+}
+#footer-investimentos #div-rodape-investimentos a {
+  text-decoration: none;
+  font-size: 40px;
+}
+#footer-investimentos #div-rodape-investimentos a h1 {
+  font-size: 36px;
+}
+#footer-investimentos h1 {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 40px;
+  color: white;
+}
+
+/*Pagina Inicial*/
+#main-pagina-inicial {
+  display: flex;
+  flex-direction: row;
+}
+#main-pagina-inicial #article-pagina-inicial {
+  display: flex;
+  flex-direction: row;
+  width: 70vw;
+  color: #4d39ff;
+}/*# sourceMappingURL=style.css.map */
