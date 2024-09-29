@@ -25,7 +25,7 @@
                 <label for="">Nome Completo</label>
                 <input type="text" name="nome-cadastro" required>
                 <label for="">CPF</label>
-                <input type="text" name="CPF-cadastro" maxlength="11" required>
+                <input type="text" id="cpf-form" name="CPF-cadastro" maxlength="14" required>
                 <label for="">Senha</label>
                 <input type="password" name="senha-cadastro" required>
                 <label for="">Email</label>
@@ -50,7 +50,9 @@
                 if($qtd > 0)
                     while($row = $res->fetch_object())
                         if($row->cpf == $cpf_usuario)
-                            $result = false;                
+                            $result = false;
+                
+                $cpf_usuario2 = 2;
 
                 if($result == true)
                 {
@@ -109,5 +111,33 @@
         ?>
         </article>
     </main>
+    <script>
+        var cpf = document.getElementById("cpf-form");
+
+        cpf.addEventListener("input", () => {
+
+        var limpar = cpf.value.replace(/\D/g, "").substring(0,14);
+
+        var numerosArray = limpar.split("");
+
+        var numeroFormatado = "";
+
+
+        if(numerosArray.length > 3){
+            numeroFormatado += ` ${numerosArray.slice(0,3).join("")}.`;
+        }
+
+        if(numerosArray.length > 6){
+            numeroFormatado += ` ${numerosArray.slice(2,7).join("")}`;
+        }
+
+        if(numerosArray.length > 9){
+            numeroFormatado += `-${numerosArray.slice(11,14).join("")}`;
+        }
+
+        cpf.value = numeroFormatado; 
+
+        });
+    </script>
 </body>
 </html>
