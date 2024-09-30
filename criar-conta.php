@@ -25,7 +25,7 @@
                 <label for="">Nome Completo</label>
                 <input type="text" name="nome-cadastro" required>
                 <label for="">CPF</label>
-                <input type="text" id="cpf-form" name="CPF-cadastro" maxlength="14" required>
+                <input type="text" id="CPF" name="CPF-cadastro" maxlength="14" required>
                 <label for="">Senha</label>
                 <input type="password" name="senha-cadastro" required>
                 <label for="">Email</label>
@@ -51,8 +51,6 @@
                     while($row = $res->fetch_object())
                         if($row->cpf == $cpf_usuario)
                             $result = false;
-                
-                $cpf_usuario2 = 2;
 
                 if($result == true)
                 {
@@ -112,31 +110,26 @@
         </article>
     </main>
     <script>
-        var cpf = document.getElementById("cpf-form");
+        var CPF = document.getElementById("CPF");
 
-        cpf.addEventListener("input", () => {
-
-        var limpar = cpf.value.replace(/\D/g, "").substring(0,14);
-
+        CPF.addEventListener("input", () => {
+        var limpar = CPF.value.replace(/\D/g, "").substring(0,13);
         var numerosArray = limpar.split("");
-
         var numeroFormatado = "";
 
-
-        if(numerosArray.length > 3){
-            numeroFormatado += ` ${numerosArray.slice(0,3).join("")}.`;
+        if(numerosArray.length > 0){
+            numeroFormatado += `${numerosArray.slice(0,3).join("")}.`;
         }
 
-        if(numerosArray.length > 6){
+        if(numerosArray.length > 2){
             numeroFormatado += ` ${numerosArray.slice(2,7).join("")}`;
         }
 
-        if(numerosArray.length > 9){
-            numeroFormatado += `-${numerosArray.slice(11,14).join("")}`;
+        if(numerosArray.length > 7){
+            numeroFormatado += ` - ${numerosArray.slice(7,11).join("")}`;
         }
 
-        cpf.value = numeroFormatado; 
-
+        CPF.value = numeroFormatado; 
         });
     </script>
 </body>
