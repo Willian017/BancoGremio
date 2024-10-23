@@ -1,6 +1,6 @@
 <h1 align="center">Banco Gremio</h1>
 <p align="center">Projeto simples de um Banco Digital de usuarios feito com PHP e Mysql</p>
-<h4 align="center">🚀 Em Manutenção 🚀</h4>
+<h4 align="center">🚧 Em manutenção... 🚧</h4>
 
 ### 🛠 Tecnologias
 
